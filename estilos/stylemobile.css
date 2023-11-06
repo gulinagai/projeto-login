@@ -23,6 +23,8 @@ section#quad {
     height: 600px;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.534);
     border-radius: 20px;
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
 }
 div#login {
     display: block;
@@ -39,6 +41,7 @@ div#login p {
 }
 div#back {
     display: block;
+    background-color: #069867;
     background-image: url(../imagens/pokefundo.jpg);
     background-position: center center;
     background-size: cover;
