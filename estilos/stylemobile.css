@@ -38,6 +38,7 @@ div#login h1 {
 }
 div#login p {
     padding: 15px;
+    font-size: 0.8em;
 }
 div#back {
     display: block;
@@ -52,10 +53,16 @@ div#back {
     display: block;
     position: relative; 
     background-color: #00479F;
-    padding: 3px;
+    padding: 3px 3px 6px 3px;
     width: 250px;
     border-radius: 30px;
-    margin: 0px auto 0px auto;
+    margin: 10px auto;
+}
+#imail:focus-within, #isenha:focus-within {
+    background-color: white; 
+}
+#imail::placeholder, #isenha::placeholder {
+    color: rgba(255, 255, 255, 0.473);
 }
 #imail {
     background-color: #047680;
@@ -71,4 +78,34 @@ div#back {
     border-radius: 30px;
     margin: 5px;
 }
-
+input[type=submit] {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 7px;
+    border-radius: 12px;
+    background-color: #00479F;
+    color: #09c989;
+    font-size: 1em;
+}
+input[type=submit]:hover {
+    background-color: #0062da;
+}
+button{
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 7px;
+    border-radius: 12px;
+    background-color: #047c54;
+    color: #09c989;
+    font-size: 1em;
+}
+button:hover {
+    background-color: #07a06d;
+}
+body > main > section#quad > div#login > form > div.campo > label > span {
+    font-size: 1.7em;
+    padding: 2px;
+    vertical-align: middle;
+}
